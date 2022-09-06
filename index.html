@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link href="./styles.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <title>Em and Rem Converter</title>
+    </head>
+    <body>
+        <main>
+            <h1>Em and Rem <span>CONVERTER</span></h1>
+            <div id="input-div">
+                <label htmlFor="font-size-input">Font Size at Root</label>
+                <input value = 16 type="number" name="font-size-input" id="font-size-input">
+
+                <label htmlFor="el-font-size">Current Font Size at Element </label>
+                <input value = 0 type="number" name="el-font-size" id="el-font-size">
+
+                <label htmlFor="desired-font">Desired Size of Element</label>
+                <input value = 0 type="number" name="desired-font" id="desired-font">
+            </div>
+            <div class="results-div">
+                <div class="stats-container">
+                    <p id="em-results">0<br>em</p>
+                </div>
+                <div class="stats-container">
+                    <p id="rem-results">0<br>rem</p>
+                </div>
+            </div>
+        </main>
+        <script src="./index.js"></script>
+    </body>
+</html>

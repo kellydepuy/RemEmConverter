@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #2e2d2d;
+    font-family: 'Quattrocento Sans', sans-serif;
+    text-align: center;
+
+}
+
+main {
+    margin: 1em;
+    padding: 2em;
+    background-color: #FFDEE9;
+    background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+    height: 95vh;
+    border-radius: 4px;;
+}
+
+/* ********** Title Section ********** */
+
+h1 {
+    font-size: 1.75rem;
+    letter-spacing: .1rem;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.52);
+    -webkit-box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.52);
+    -moz-box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.52);
+}
+
+h1 span {
+    font-size: 2.5rem;
+    color: darkcyan;
+}
+
+/* ********** Input Section ********** */
+
+
+#input-div {
+    width: 90%;
+    margin: 2em auto;
+    display: grid;
+    grid-template: 1fr 1fr 1fr/ 3fr 1fr;
+    padding: 1.5em 0 1em 1.5em;
+    gap: 0 1em;
+    text-align: left;
+    border-radius: 10px;
+    box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.52);
+    -webkit-box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.52);
+    -moz-box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.52);
+}
+
+input[type=number] {
+    max-width: 45px;
+    margin-bottom: 1em;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px dashed #2e2d2d;
+    padding: .2em;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+label {
+    margin: .5em;
+    font-weight: 700;
+
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+/* ********** Results Section ********** */
+
+.results-div {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+}
+
+.stats-container {
+    padding:2em;
+    width: 40%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.52);
+    -webkit-box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.52);
+    -moz-box-shadow: -1px 2px 5px 0px rgba(0,0,0,0.52);
+
+}
+
+p {
+    margin: 0;
+    font-size: 2rem;
+    line-height: .9em;;
+}
+
+
+/* ********** Media Queries ********** */
+
+@media (min-width: 800px) {
+
+    main {
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+@media (max-width: 400px) {
+    html {
+        font-size: 8px;
+    }
+
+}
